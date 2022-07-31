@@ -130,15 +130,13 @@ visit_doc :: proc(
 		result = cons(text(`"`), text(v.value), text(`"`))
 
 	case Document_Group:
-		result = cons(
-			text("group="),
-			text(`"`),
-			text(v.options.id),
-			text(`"`),
-			text("("),
-			visit_doc(v.document),
-			text(")"),
-		)
+		result = cons(text("group"))
+
+		if v.options.id != "" {
+			result = cons(text(`="`), text(v.options.id), text(`"`))
+		}
+
+		result = cons(result, text("("), visit_doc(v.document), text(")"))
 
 	case Document_Cons:
 		length := 0
@@ -189,7 +187,10 @@ visit_doc :: proc(
 
 
 	case Document_If_Break:
-		result = cons_with_nopl(text("if_break =>"), cons(text(`"`), text(v.value), text(`"`)))
+		result = cons_with_nopl(
+			text("if_break =>"),
+			cons(text(`"`), text(v.value), text(`"`)),
+		)
 
 
 	case Document_Align:

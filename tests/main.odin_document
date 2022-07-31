@@ -1,110 +1,68 @@
 [
-	nil,
 	newline,
 	"package",
 	" ",
 	"odinfmt_test",
-	nil,
-	nil,
 	newline,
-	group=""([
-		group=""([
-			nil,
-			nil,
-			nil,
+	group([
+		group([
 			"assignments",
 			" ",
 			":",
 			":",
 		]),
 		" ",
-		group=""([
-			nil,
-			group=""([
+		group([
+			group([
 				"proc",
 				"(",
 				indent(
-					[
-						"",
-						nil,
-					]
+					""
 				),
 				"",
 				")",
 			]),
 			" ",
-			group=""([
-				nil,
+			group([
 				newline,
-				nil,
 				"{",
 				indent(
 					[
-						nil,
-						nil,
-						nil,
 						newline,
-						group=""(indent(
+						group(indent(
 							[
-								nil,
-								nil,
-								nil,
 								"a",
 								",",
 								" ",
-								nil,
-								nil,
 								"b",
 								",",
 								" ",
-								nil,
-								nil,
 								"c",
 								",",
 								" ",
-								nil,
-								nil,
 								"d",
 								",",
 								" ",
-								nil,
-								nil,
 								"e",
 								",",
 								" ",
-								nil,
-								nil,
 								"f",
 								",",
 								" ",
-								nil,
-								nil,
 								"res",
 								" ",
 								":",
 								"=",
 								" ",
-								group=""([
-									nil,
-									nil,
+								group([
 									"&",
-									nil,
-									group=""([
-										nil,
-										nil,
-										nil,
+									group([
 										"big",
-										nil,
 										".",
-										nil,
-										nil,
 										"Int",
 										"{",
 										indent(
-											[
-												"",
-												nil,
-											]
+											""
 										),
 										if_break => ",",
 										"",
@@ -112,26 +70,14 @@
 									]),
 									",",
 									" ",
-									nil,
-									nil,
 									"&",
-									nil,
-									group=""([
-										nil,
-										nil,
-										nil,
+									group([
 										"big",
-										nil,
 										".",
-										nil,
-										nil,
 										"Int",
 										"{",
 										indent(
-											[
-												"",
-												nil,
-											]
+											""
 										),
 										if_break => ",",
 										"",
@@ -139,26 +85,14 @@
 									]),
 									",",
 									" ",
-									nil,
-									nil,
 									"&",
-									nil,
-									group=""([
-										nil,
-										nil,
-										nil,
+									group([
 										"big",
-										nil,
 										".",
-										nil,
-										nil,
 										"Int",
 										"{",
 										indent(
-											[
-												"",
-												nil,
-											]
+											""
 										),
 										if_break => ",",
 										"",
@@ -166,26 +100,14 @@
 									]),
 									",",
 									" ",
-									nil,
-									nil,
 									"&",
-									nil,
-									group=""([
-										nil,
-										nil,
-										nil,
+									group([
 										"big",
-										nil,
 										".",
-										nil,
-										nil,
 										"Int",
 										"{",
 										indent(
-											[
-												"",
-												nil,
-											]
+											""
 										),
 										if_break => ",",
 										"",
@@ -193,26 +115,14 @@
 									]),
 									",",
 									" ",
-									nil,
-									nil,
 									"&",
-									nil,
-									group=""([
-										nil,
-										nil,
-										nil,
+									group([
 										"big",
-										nil,
 										".",
-										nil,
-										nil,
 										"Int",
 										"{",
 										indent(
-											[
-												"",
-												nil,
-											]
+											""
 										),
 										if_break => ",",
 										"",
@@ -220,26 +130,14 @@
 									]),
 									",",
 									" ",
-									nil,
-									nil,
 									"&",
-									nil,
-									group=""([
-										nil,
-										nil,
-										nil,
+									group([
 										"big",
-										nil,
 										".",
-										nil,
-										nil,
 										"Int",
 										"{",
 										indent(
-											[
-												"",
-												nil,
-											]
+											""
 										),
 										if_break => ",",
 										"",
@@ -247,26 +145,14 @@
 									]),
 									",",
 									" ",
-									nil,
-									nil,
 									"&",
-									nil,
-									group=""([
-										nil,
-										nil,
-										nil,
+									group([
 										"big",
-										nil,
 										".",
-										nil,
-										nil,
 										"Int",
 										"{",
 										indent(
-											[
-												"",
-												nil,
-											]
+											""
 										),
 										if_break => ",",
 										"",
@@ -275,132 +161,82 @@
 								]),
 							]
 						)),
-						nil,
 					]
 				),
-				nil,
 				newline,
 				"}",
 			]),
 		]),
 	]),
-	nil,
-	nil,
 	newline,
-	group=""([
-		group=""([
-			nil,
-			nil,
-			nil,
+	group([
+		group([
 			"ternary_when_assignment",
 			" ",
 			":",
 			":",
 		]),
 		" ",
-		group=""([
-			nil,
-			group=""([
+		group([
+			group([
 				"proc",
 				"(",
 				indent(
-					[
-						"",
-						nil,
-					]
+					""
 				),
 				"",
 				")",
 			]),
 			" ",
-			group=""([
-				nil,
+			group([
 				newline,
-				nil,
 				"{",
 				indent(
 					[
-						nil,
-						nil,
-						nil,
 						newline,
-						group=""(indent(
+						group(indent(
 							[
-								nil,
-								nil,
-								nil,
 								"a",
 								" ",
 								":",
 								"=",
 								" ",
-								group=""([
-									nil,
-									nil,
-									nil,
+								group([
 									"WGL_CONTEXT_FLAGS_ARB",
 									" ",
-									nil,
 									"when",
 									" ",
-									nil,
-									nil,
 									"ODIN_DEBUG",
 									" ",
-									nil,
 									"else",
 									" ",
-									nil,
-									nil,
 									"0",
 								]),
 							]
 						)),
-						nil,
-						nil,
 						newline,
-						group=""(indent(
+						group(indent(
 							[
-								nil,
-								nil,
-								nil,
 								"b",
 								" ",
 								":",
 								"=",
 								" ",
-								group=""([
-									nil,
-									group=""([
-										nil,
-										nil,
-										"ODIN_DEBUG",
-									]),
+								group([
+									group("ODIN_DEBUG"),
 									" ",
-									nil,
 									"?",
 									" ",
-									group=""([
-										nil,
-										nil,
-										"WGL_CONTEXT_FLAGS_ARB",
-									]),
+									group("WGL_CONTEXT_FLAGS_ARB"),
 									" ",
-									nil,
 									":",
 									" ",
-									group=""([
-										nil,
-										nil,
-										"0",
-									]),
+									group("0"),
 								]),
 							]
 						)),
-						nil,
 					]
 				),
-				nil,
 				newline,
 				"}",
 			]),

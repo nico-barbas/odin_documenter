@@ -217,11 +217,12 @@ cons :: proc(elems: ..^Document, allocator := context.allocator) -> ^Document {
 	document := new(Document, allocator)
 	elements := make([dynamic]^Document, allocator)
 	for elem in elems {
-		if inner_c, ok := elem.(Document_Cons); ok {
-			append(&elements, ..inner_c.elements)
-			// for inner_elem in inner_c {
-			// }
-		}  else {
+		#partial switch e in elem {
+		case Document_Nil:
+			continue
+		case Document_Cons:
+			append(&elements, ..e.elements)
+		case:
 			append(&elements, elem)
 		}
 	}
